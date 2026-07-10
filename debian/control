@@ -1,32 +1,22 @@
-Source: lingmo-screenlocker
-Section: devel
+﻿Source: lingmo-screenlocker
+Section: utils
 Priority: optional
-Maintainer: CuteOS <support@cuteos.com>
-Build-Depends: cmake,
-               debhelper (>= 9),
-               extra-cmake-modules,
-               qtbase5-dev,
-               qtdeclarative5-dev,
-               qtquickcontrols2-5-dev,
-               qttools5-dev,
-               qttools5-dev-tools,
-               libqt5x11extras5-dev,
-               libpam0g-dev,
-               libx11-dev
-Standards-Version: 4.5.0
-Homepage: https://cuteos.com
+Maintainer: Lingmo OS Team <team@lingmo.org>
+Build-Depends:
+    cmake (>= 3.20),
+    debhelper-compat (= 13),
+    pkg-config,
+    qt6-base-dev (>= 6.5),
+    qt6-declarative-dev,
+    qt6-base-dev, qt6-declarative-dev, libpam0g-dev,
+Standards-Version: 4.6.2
+Homepage: https://github.com/lingmo-os/lingmo-screenlocker
+Rules-Requires-Root: no
 
 Package: lingmo-screenlocker
 Architecture: any
-Depends: qml-module-qtquick-controls2,
-         qml-module-qtquick2,
-         qml-module-qtquick-layouts,
-         qml-module-qt-labs-platform,
-         qml-module-qt-labs-settings,
-         qml-module-qtqml,
-         qml-module-qtquick-window2,
-         qml-module-qtquick-shapes,
-         qml-module-qtquick-dialogs,
-         ${misc:Depends},
-         ${shlibs:Depends}
-Description: CuteOS Screen Locker
+Depends:
+    ,
+    ,
+Description: Lingmo ScreenLocker
+ Lingmo Desktop Lingmo ScreenLocker.
